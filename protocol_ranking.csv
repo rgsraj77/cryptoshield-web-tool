@@ -1,0 +1,101 @@
+rank,protocol,family,actual_severity,predicted_severity,P_High,P_Moderate,actual_MITM,predicted_MITM,actual_Replay,predicted_Replay,actual_Downgrade,predicted_Downgrade,actual_Token-theft,predicted_Token-theft,n_actual_attacks,n_predicted_attacks,vulnerability_score,lean_status
+1,SSL_2_0,session,High,High,0.999,0.001,1,1,1,1,1,1,0,0,3,3,1.3,Vulnerable - Cipher rollback (Dolev-Yao)
+2,Bluetooth_Legacy,wireless,High,High,0.997,0.003,1,1,1,1,0,1,0,0,2,3,1.298,Vulnerable - PIN brute force (Dolev-Yao)
+3,WEP,wireless,High,High,0.993,0.007,1,1,1,1,0,0,0,1,2,3,1.296,"Vulnerable - IV reuse (Dolev-Yao, algebraic)"
+4,WPA_TKIP,wireless,High,High,0.755,0.245,1,1,1,1,0,1,0,0,2,3,1.178,Vulnerable - Beck-Tews (Dolev-Yao)
+5,WooLam_Original,authentication,High,High,0.953,0.046,1,1,0,1,0,0,0,0,1,2,1.176,Vulnerable - Abadi-Needham (Paulson)
+6,PAP,authentication,High,High,0.925,0.075,0,0,1,1,0,0,1,1,2,2,1.162,Vulnerable - Plaintext disclosure (Dolev-Yao)
+7,NeedhamSchroeder_PK,authentication,High,High,0.91,0.09,1,1,0,1,0,0,0,0,1,2,1.155,Vulnerable - MITM (Dolev-Yao + Paulson)
+8,HTTP_Basic_Auth,authentication,High,High,0.88,0.12,0,0,1,1,0,0,1,1,2,2,1.14,Vulnerable - Base64 disclosure (Dolev-Yao)
+9,EAP_MD5,authentication,High,High,0.82,0.18,0,1,1,1,0,0,0,0,1,2,1.11,Vulnerable - Dictionary (Dolev-Yao)
+10,DiffieHellman_Basic,key_exchange,High,High,0.944,0.056,1,1,0,0,0,0,0,0,1,1,1.072,Vulnerable - MITM (Dolev-Yao)
+11,NeedhamSchroeder_Symmetric,authentication,High,High,0.937,0.062,0,0,1,1,0,0,0,0,1,1,1.068,Vulnerable - Replay (Dolev-Yao + Paulson)
+12,PPTP_MSCHAPv2,vpn,High,High,0.946,0.04,0,0,1,1,0,0,0,0,1,1,1.066,Vulnerable - DES split (Dolev-Yao)
+13,SSL_3_0,session,High,Moderate,0.398,0.593,0,0,0,0,1,1,0,0,1,1,0.794,Vulnerable - Downgrade/POODLE (Dolev-Yao + Paulson)
+14,TLS_1_0,session,Moderate,Moderate,0.346,0.642,0,0,0,0,1,1,0,0,1,1,0.767,not formalised
+15,OAuth2_Bearer,authorization,Moderate,Moderate,0.097,0.903,0,0,0,1,0,0,1,1,1,2,0.748,not formalised
+16,WPA2_PSK,wireless,Moderate,Moderate,0.086,0.902,0,0,1,1,0,1,0,0,1,2,0.737,not formalised
+17,Bluetooth_LE_SC,wireless,Moderate,Moderate,0.039,0.959,1,1,0,0,1,1,0,0,2,2,0.718,not formalised
+18,DKIM,authentication,Moderate,Moderate,0.02,0.975,0,0,1,1,0,0,0,1,1,2,0.708,not formalised
+19,SMTP_STARTTLS,session,Moderate,Moderate,0.013,0.969,0,1,0,0,1,1,0,0,1,2,0.698,not formalised
+20,WPA3_SAE,wireless,Moderate,Moderate,0.002,0.973,0,1,0,0,1,1,0,0,1,2,0.688,not formalised
+21,CHAP,authentication,Moderate,Moderate,0.182,0.762,0,1,0,0,0,0,0,0,0,1,0.663,not formalised
+22,EAP_FAST,authentication,Moderate,Moderate,0.006,0.91,1,1,0,0,0,1,0,0,1,2,0.661,not formalised
+23,IKEv1,key_exchange,Moderate,Moderate,0.003,0.913,0,1,0,0,1,1,0,0,1,2,0.66,not formalised
+24,WideMouthedFrog,key_distribution,Moderate,Moderate,0.063,0.934,0,0,1,1,0,0,0,0,1,1,0.63,not formalised
+25,DNSSEC,authentication,Moderate,Moderate,0.087,0.877,0,0,1,1,0,0,0,0,1,1,0.626,not formalised
+26,Kerberos_V4,authentication,Moderate,Moderate,0.006,0.99,0,0,1,1,0,0,0,0,1,1,0.601,not formalised
+27,JWT,authorization,Moderate,Moderate,0.0,0.999,0,0,0,0,0,0,1,1,1,1,0.6,not formalised
+28,Noise_NN,key_exchange,Moderate,Moderate,0.013,0.97,1,1,0,0,0,0,0,0,1,1,0.598,not formalised
+29,UMTS_AKA,cellular,Moderate,Moderate,0.012,0.962,0,0,0,0,1,1,0,0,1,1,0.593,not formalised
+30,RADIUS,authentication,Moderate,Moderate,0.158,0.668,0,0,1,1,0,0,0,0,1,1,0.592,not formalised
+31,EPS_AKA,cellular,Moderate,Moderate,0.007,0.959,0,0,0,0,1,1,0,0,1,1,0.586,not formalised
+32,5G_AKA,cellular,Moderate,Moderate,0.001,0.964,0,0,0,0,1,1,0,0,1,1,0.583,not formalised
+33,MQV,key_exchange,Moderate,Moderate,0.125,0.707,1,1,0,0,0,0,0,0,1,1,0.578,not formalised
+34,SAML_2_0,authorization,Moderate,Moderate,0.0,0.938,0,0,0,0,0,0,1,1,1,1,0.569,not formalised
+35,OAuth2_Device_Flow,authorization,Moderate,Moderate,0.011,0.903,0,0,0,0,0,0,1,1,1,1,0.562,not formalised
+36,DenningSacco,key_distribution,Moderate,Moderate,0.003,0.916,0,0,0,1,0,0,0,0,0,1,0.561,not formalised
+37,Zigbee_3,wireless,Moderate,Moderate,0.002,0.898,0,0,1,1,0,0,0,0,1,1,0.551,not formalised
+38,PGP,messaging,Moderate,Moderate,0.018,0.97,0,0,0,0,0,0,0,0,0,0,0.503,not formalised
+39,SMIME,messaging,Moderate,Moderate,0.005,0.991,0,0,0,0,0,0,0,0,0,0,0.5,not formalised
+40,EKE,key_exchange,Moderate,Moderate,0.047,0.642,0,1,0,0,0,0,0,0,0,1,0.468,not formalised
+41,OAuth1_0a,authorization,Moderate,Moderate,0.001,0.887,0,0,0,0,0,0,0,0,0,0,0.444,not formalised
+42,SPEKE,key_exchange,Moderate,Moderate,0.034,0.621,0,1,0,0,0,0,0,0,0,1,0.444,not formalised
+43,iMessage,messaging,Moderate,Moderate,0.0,0.874,0,0,0,0,0,0,0,0,0,0,0.437,not formalised
+44,TLS_1_1,session,Moderate,Moderate,0.051,0.55,0,0,0,0,0,1,0,0,0,1,0.426,not formalised
+45,HTTP_Digest_Auth,authentication,Moderate,Moderate,0.027,0.788,0,0,0,0,0,0,0,0,0,0,0.421,not formalised
+46,CRYSTALS_Kyber,key_exchange,Low,Moderate,0.007,0.578,0,1,0,0,0,0,0,0,0,1,0.396,not formalised
+47,NeumanStubblebine,authentication,Moderate,Moderate,0.001,0.757,0,0,0,0,0,0,0,0,0,0,0.38,not formalised
+48,Kerberos_V5,authentication,Low,Moderate,0.001,0.757,0,0,0,0,0,0,0,0,0,0,0.38,not formalised
+49,Kerberos_PKINIT,authentication,Low,Moderate,0.0,0.757,0,0,0,0,0,0,0,0,0,0,0.378,not formalised
+50,OtwayRees,authentication,Moderate,Moderate,0.006,0.705,0,0,0,0,0,0,0,0,0,0,0.358,not formalised
+51,Andrew_Secure_RPC,authentication,Moderate,Moderate,0.005,0.691,0,0,0,0,0,0,0,0,0,0,0.35,not formalised
+52,Yahalom,authentication,Low,Moderate,0.005,0.684,0,0,0,0,0,0,0,0,0,0,0.347,not formalised
+53,Telegram_MTProto2,messaging,Moderate,Moderate,0.0,0.648,0,0,0,0,0,0,0,0,0,0,0.324,not formalised
+54,EAP_AKA,authentication,Moderate,Moderate,0.001,0.558,0,0,0,0,0,0,0,0,0,0,0.28,not formalised
+55,EAP_SIM,authentication,Moderate,Moderate,0.001,0.558,0,0,0,0,0,0,0,0,0,0,0.28,not formalised
+56,Signal_Protocol,messaging,Low,Low,0.0,0.445,0,0,0,0,0,0,0,0,0,0,0.222,not formalised
+57,STS,key_exchange,Low,Low,0.003,0.214,0,1,0,0,0,0,0,0,0,1,0.21,not formalised
+58,Matrix_Megolm,messaging,Moderate,Low,0.0,0.419,0,0,0,0,0,0,0,0,0,0,0.21,not formalised
+59,NeedhamSchroeder_Lowe,authentication,Low,Low,0.02,0.171,0,0,0,1,0,0,0,0,0,1,0.206,"Safe vs NS-PK MITM (Dolev-Yao + Paulson, structural)"
+60,OCSP,authentication,Moderate,Low,0.004,0.371,0,0,0,0,0,0,0,0,0,0,0.19,not formalised
+61,WooLam_Fixed,authentication,Low,Low,0.003,0.37,0,0,0,0,0,0,0,0,0,0,0.188,not formalised
+62,IPSec_ESP,vpn,Low,Low,0.0,0.133,0,0,0,1,0,0,0,0,0,1,0.166,not formalised
+63,EAP_TLS,authentication,Low,Low,0.0,0.31,0,0,0,0,0,0,0,0,0,0,0.155,not formalised
+64,EAP_PEAP,authentication,Moderate,Low,0.0,0.288,0,0,0,0,0,0,0,0,0,0,0.144,not formalised
+65,SCRAM_SHA256,authentication,Low,Low,0.002,0.259,0,0,0,0,0,0,0,0,0,0,0.132,not formalised
+66,EAP_TTLS,authentication,Moderate,Low,0.0,0.247,0,0,0,0,0,0,0,0,0,0,0.124,not formalised
+67,RadSec,authentication,Low,Low,0.0,0.222,0,0,0,0,0,0,0,0,0,0,0.111,not formalised
+68,TLS_1_2,session,Low,Low,0.003,0.185,0,0,0,0,0,0,0,0,0,0,0.096,not formalised
+69,SSH_Public_Key,authentication,Low,Low,0.001,0.182,0,0,0,0,0,0,0,0,0,0,0.092,not formalised
+70,DTLS_1_2,session,Low,Low,0.002,0.166,0,0,0,0,0,0,0,0,0,0,0.085,not formalised
+71,ISO_9798_3,authentication,Low,Low,0.0,0.162,0,0,0,0,0,0,0,0,0,0,0.081,not formalised
+72,OAuth2_PKCE,authorization,Low,Low,0.006,0.15,0,0,0,0,0,0,0,0,0,0,0.081,not formalised
+73,ISO_9798_2,authentication,Low,Low,0.004,0.153,0,0,0,0,0,0,0,0,0,0,0.08,not formalised
+74,HMQV,key_exchange,Low,Low,0.001,0.148,0,0,0,0,0,0,0,0,0,0,0.075,not formalised
+75,OTR,messaging,Low,Low,0.0,0.135,0,0,0,0,0,0,0,0,0,0,0.068,not formalised
+76,IKEv2,key_exchange,Low,Low,0.0,0.128,0,0,0,0,0,0,0,0,0,0,0.064,not formalised
+77,OpenVPN,vpn,Low,Low,0.0,0.098,0,0,0,0,0,0,0,0,0,0,0.049,not formalised
+78,L2TP_IPSec,vpn,Low,Low,0.0,0.098,0,0,0,0,0,0,0,0,0,0,0.049,not formalised
+79,ECDHE,key_exchange,Low,Low,0.002,0.079,0,0,0,0,0,0,0,0,0,0,0.042,not formalised
+80,SSTP,vpn,Low,Low,0.0,0.081,0,0,0,0,0,0,0,0,0,0,0.04,not formalised
+81,MLS,messaging,Low,Low,0.0,0.075,0,0,0,0,0,0,0,0,0,0,0.038,not formalised
+82,OCSP_Stapling,session,Low,Low,0.0,0.069,0,0,0,0,0,0,0,0,0,0,0.034,not formalised
+83,TLS_PSK,session,Low,Low,0.001,0.064,0,0,0,0,0,0,0,0,0,0,0.033,not formalised
+84,OAuth2_DPoP,authorization,Low,Low,0.0,0.053,0,0,0,0,0,0,0,0,0,0,0.026,not formalised
+85,OpenID_Connect,authorization,Low,Low,0.0,0.048,0,0,0,0,0,0,0,0,0,0,0.024,not formalised
+86,DoT,session,Low,Low,0.0,0.038,0,0,0,0,0,0,0,0,0,0,0.019,not formalised
+87,TLS_1_3,session,Low,Low,0.0,0.036,0,0,0,0,0,0,0,0,0,0,0.018,not formalised
+88,DoH,session,Low,Low,0.0,0.036,0,0,0,0,0,0,0,0,0,0,0.018,not formalised
+89,DTLS_1_3,session,Low,Low,0.0,0.031,0,0,0,0,0,0,0,0,0,0,0.016,not formalised
+90,QUIC_TLS13,session,Low,Low,0.0,0.032,0,0,0,0,0,0,0,0,0,0,0.016,not formalised
+91,FIDO_U2F,authentication,Low,Low,0.0,0.027,0,0,0,0,0,0,0,0,0,0,0.014,not formalised
+92,OPAQUE,key_exchange,Low,Low,0.0,0.026,0,0,0,0,0,0,0,0,0,0,0.013,not formalised
+93,Noise_XK,key_exchange,Low,Low,0.0,0.026,0,0,0,0,0,0,0,0,0,0,0.013,not formalised
+94,WebAuthn_FIDO2,authentication,Low,Low,0.0,0.023,0,0,0,0,0,0,0,0,0,0,0.012,not formalised
+95,ZRTP,session,Low,Low,0.0,0.025,0,0,0,0,0,0,0,0,0,0,0.012,not formalised
+96,SSH_Transport,session,Low,Low,0.0,0.015,0,0,0,0,0,0,0,0,0,0,0.008,not formalised
+97,WireGuard,vpn,Low,Low,0.0,0.017,0,0,0,0,0,0,0,0,0,0,0.008,not formalised
+98,SRP_6,key_exchange,Low,Low,0.0,0.012,0,0,0,0,0,0,0,0,0,0,0.006,not formalised
+99,J_PAKE,key_exchange,Low,Low,0.0,0.01,0,0,0,0,0,0,0,0,0,0,0.005,not formalised
+100,X3DH,key_exchange,Low,Low,0.0,0.004,0,0,0,0,0,0,0,0,0,0,0.002,not formalised
